@@ -5,6 +5,13 @@ const pages = document.querySelectorAll(".page");
 
 function navigation(pageId) {
   pages.forEach((p) => p.classList.remove("active"));
+  navLinks.forEach((n) => {
+    if(n.dataset.page === pageId){
+      n.classList.add("active-link")
+    }else{
+      n.classList.remove("active-link")
+    }
+  })
 
   const target = document.getElementById("page-" + pageId);
   if (target) {
