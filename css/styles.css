@@ -219,3 +219,30 @@ body {
   font-size: 0.85rem;
   color: #555;
 }
+
+@keyframes pageIn {
+  from{
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+.page{
+  display: none;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.page.active{
+  display: flex;
+  animation: pageIn 0.22s ease forwards;
+}
+
+.nav-bar a.active-link{
+  color:#1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

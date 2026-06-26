@@ -9,7 +9,6 @@
   <body>
     <div class="container">
       <div class="centre-div">
-
         <!-- 1. Header card -->
         <div class="card header-card">
           <h1 class="site-name">Hi, I am Nerish</h1>
@@ -17,83 +16,107 @@
         </div>
 
         <!-- 2. Nav bar -->
+        <!-- Data Pages are used later on for JS -->
         <nav class="nav-bar">
-          <a href="#">blogs</a>
-          <a href="#">writings</a>
-          <a href="#">about</a>
-          <a href="#">book_list</a>
-          <a href="#">cool_photos</a>
-          <a href="#">music_list</a>
+          <a href="#" class="nav-link" data-page="blogs">blogs</a>
+          <a href="#" class="nav-link" data-page="writings">writings</a>
+          <a href="#" class="nav-link" data-page="about">about</a>
+          <a href="#" class="nav-link" data-page="book_list">book_list</a>
+          <a href="#" class="nav-link" data-page="cool_photos">cool_photos</a>
+          <a href="#" class="nav-link" data-page="music_list">music_list</a>
           <span class="nav-icon">☽</span>
         </nav>
 
-        <!-- 3. Bio card -->
-        <div class="card bio-card">
-          <p class="bio-text">
-            I build things for the web and occasionally write about
-            whatever I'm obsessed with. Interested in systems, slow
-            reading, and making tools that feel honest.
-          </p>
-          <div class="avatar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-              <circle cx="12" cy="8" r="4"/>
-              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-            </svg>
+        <div id="main-content">
+          <div class="page active" id="page-home">
+            <!-- 3. Bio card -->
+            <div class="card bio-card">
+              <p class="bio-text">
+                I build things for the web and occasionally write about whatever
+                I'm obsessed with. Interested in systems, slow reading, and
+                making tools that feel honest.
+              </p>
+              <div class="avatar">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                >
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- 4. Currently card -->
+            <div class="card currently-card">
+              <span class="section-label">CURRENTLY</span>
+              <div class="divider"></div>
+              <div class="currently-row">
+                <span class="row-label">reading</span>
+                <span class="row-content">
+                  <strong>The Remains of the Day</strong>
+                  <span class="tag">Kazuo Ishiguro</span>
+                </span>
+              </div>
+              <div class="divider"></div>
+              <div class="currently-row">
+                <span class="row-label">watching</span>
+                <span class="row-content">
+                  <strong>Severance</strong>
+                  <span class="tag">Season 2</span>
+                </span>
+              </div>
+              <div class="divider"></div>
+              <div class="currently-row">
+                <span class="row-label">working_on</span>
+                <span class="row-content">
+                  <strong>a small web scraper</strong>
+                  <span class="tag">rust + tokio</span>
+                </span>
+              </div>
+              <div class="divider"></div>
+            </div>
+
+            <!-- 5. Pinned card -->
+            <div class="card pinned-card">
+              <span class="section-label">PINNED</span>
+              <div class="divider"></div>
+              <div class="pinned-row">
+                <a href="#" class="project-name">bluebird</a>
+                <span class="project-desc"
+                  >a minimal rss reader built with rust and htmx</span
+                >
+              </div>
+              <div class="divider"></div>
+              <div class="pinned-row">
+                <a href="#" class="project-name">logbook</a>
+                <span class="project-desc">plain-text daily logging cli</span>
+              </div>
+              <div class="divider"></div>
+              <div class="pinned-row">
+                <a href="#" class="project-name">this site</a>
+                <span class="project-desc"
+                  >personal portfolio, react + tailwind</span
+                >
+              </div>
+              <div class="divider"></div>
+            </div>
+          </div>
+
+          <div class="page" id="page-blogs">
+            <div class="card">
+              <span class="section-label">BLOGS</span>
+              <div class="divider"></div>
+              <p>First Blog Post --- 2026-06-20</p>
+            </div>
           </div>
         </div>
-
-        <!-- 4. Currently card -->
-        <div class="card currently-card">
-          <span class="section-label">CURRENTLY</span>
-          <div class="divider"></div>
-          <div class="currently-row">
-            <span class="row-label">reading</span>
-            <span class="row-content">
-              <strong>The Remains of the Day</strong>
-              <span class="tag">Kazuo Ishiguro</span>
-            </span>
-          </div>
-          <div class="divider"></div>
-          <div class="currently-row">
-            <span class="row-label">watching</span>
-            <span class="row-content">
-              <strong>Severance</strong>
-              <span class="tag">Season 2</span>
-            </span>
-          </div>
-          <div class="divider"></div>
-          <div class="currently-row">
-            <span class="row-label">working_on</span>
-            <span class="row-content">
-              <strong>a small web scraper</strong>
-              <span class="tag">rust + tokio</span>
-            </span>
-          </div>
-          <div class="divider"></div>
-        </div>
-
-        <!-- 5. Pinned card -->
-        <div class="card pinned-card">
-          <span class="section-label">PINNED</span>
-          <div class="divider"></div>
-          <div class="pinned-row">
-            <a href="#" class="project-name">bluebird</a>
-            <span class="project-desc">a minimal rss reader built with rust and htmx</span>
-          </div>
-          <div class="divider"></div>
-          <div class="pinned-row">
-            <a href="#" class="project-name">logbook</a>
-            <span class="project-desc">plain-text daily logging cli</span>
-          </div>
-          <div class="divider"></div>
-          <div class="pinned-row">
-            <a href="#" class="project-name">this site</a>
-            <span class="project-desc">personal portfolio, react + tailwind</span>
-          </div>
-          <div class="divider"></div>
-        </div>
-
       </div>
     </div>
+
+    <script src="./js/router.js"></script>
   </body>
 </html>
