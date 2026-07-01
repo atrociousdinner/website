@@ -1,6 +1,8 @@
 const navLinks = document.querySelectorAll(".nav-link");
 const pages = document.querySelectorAll(".page");
 
+const blogTitles = document.querySelectorAll(".post-title") 
+
 // function to toggle page active
 
 function navigation(pageId) {

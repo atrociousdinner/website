@@ -370,3 +370,73 @@ body {
   padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }
+
+/* ─── Blog Post Detail Page Styles ───────────────── */
+.post-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem;
+}
+
+.post-detail-meta {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.post-detail-title {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.post-detail-tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-detail-tags span {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #666;
+  background-color: #f5f2eb;
+  border: 1px solid #b0a898;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.post-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.post-detail-body p {
+  font-family: monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.post-detail-subheading {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-top: 1rem;
+}
+
+.post-detail-body blockquote {
+  border-left: 2px solid #6b7fa8;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
