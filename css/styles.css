@@ -530,3 +530,65 @@ body {
   color: #b0a898;
 }
 
+/* ─── Music List Page Styles ─────────────────────── */
+.music-list-title {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.music-section-label {
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+}
+
+.playlists-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.playlist-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.playlist-name {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.playlist-name:hover {
+  text-decoration: underline;
+}
+
+.playlist-desc {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.playlist-tracks {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #888;
+  white-space: nowrap;
+}
+
