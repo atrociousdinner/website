@@ -61,6 +61,20 @@ body {
   color: #1a1a1a;
 }
 
+.handwriting-video {
+  width: 280px;
+  display: block;
+  margin-top: -10%;
+  margin-bottom: -10%;
+  margin-left: -12%;
+}
+
+.video-crop-box {
+  width: 280px;
+  overflow: hidden;
+  background-color: #f5f2eb;
+}
+
 .handle {
   font-size: 0.85rem;
   color: #888;
