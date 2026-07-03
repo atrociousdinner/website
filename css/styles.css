@@ -655,3 +655,8 @@ body {
   display: flex;
   flex-wrap: wrap;
 } */
+
+.social-link {
+  text-decoration: none;
+  color: #888;
+}
