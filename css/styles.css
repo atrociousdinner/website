@@ -65,7 +65,7 @@ body {
   width: 280px;
   display: block;
   margin-top: -10%;
-  margin-bottom: -10%;
+  margin-bottom: -6%;
   margin-left: -12%;
 }
 
@@ -659,4 +659,22 @@ body {
 .social-link {
   text-decoration: none;
   color: #888;
+}
+
+.social-link:hover {
+  color: #1a1a1a;
+}
+
+.photo-section-label {
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+}
+
+#poem {
+  font-size: 1.2rem;
+  font-family: "Noto Sans Devanagari", sans-serif;
 }
