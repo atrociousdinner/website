@@ -22,12 +22,12 @@
         <!-- 2. Nav bar -->
         <!-- Data Pages are used later on for JS -->
         <nav class="nav-bar">
+          <a href="#" class="nav-link" data-page="home">home</a>
           <a href="#" class="nav-link" data-page="blogs">blogs</a>
           <a href="#" class="nav-link" data-page="projects">projects</a>
           <a href="#" class="nav-link" data-page="book_list">book_list</a>
-          <a href="#" class="nav-link" data-page="cool_photos">cool_photos</a>
           <a href="#" class="nav-link" data-page="music_list">music_list</a>
-          <span class="nav-icon">☽</span>
+          <a href="#" class="nav-link" data-page="cool_photos">cool_photos</a>
         </nav>
 
         <div id="main-content">
@@ -63,24 +63,24 @@
               <div class="currently-row">
                 <span class="row-label">reading</span>
                 <span class="row-content">
-                  <strong>The Remains of the Day</strong>
-                  <span class="tag">Kazuo Ishiguro</span>
+                  <strong>Nothing</strong>
+                  <span class="tag">(Currently a bit busy.)</span>
                 </span>
               </div>
               <div class="divider"></div>
               <div class="currently-row">
                 <span class="row-label">watching</span>
                 <span class="row-content">
-                  <strong>Severance</strong>
-                  <span class="tag">Season 2</span>
+                  <strong>From</strong>
+                  <span class="tag">Season 5</span>
                 </span>
               </div>
               <div class="divider"></div>
               <div class="currently-row">
                 <span class="row-label">working_on</span>
                 <span class="row-content">
-                  <strong>a small web scraper</strong>
-                  <span class="tag">rust + tokio</span>
+                  <strong>Pub Sub architecture</strong>
+                  <span class="tag">Typescript + RabbitMQ</span>
                 </span>
               </div>
               <div class="divider"></div>
@@ -90,22 +90,24 @@
             <div class="card pinned-card">
               <span class="section-label">PINNED</span>
               <div class="divider"></div>
-              <div class="pinned-row">
-                <a href="#" class="project-name">bluebird</a>
+              <div class="pinned-row" id="long-project-name">
+                <a href="#" class="project-name">ku_rpa</a>
                 <span class="project-desc"
-                  >a minimal rss reader built with rust and htmx</span
+                  >Revamp of KU's legacy application system
+                </span>
+              </div>
+              <div class="divider"></div>
+              <div class="pinned-row">
+                <a href="#" class="project-name">expense_tracker_cli</a>
+                <span class="project-desc"
+                  >plain-text expense tracking cli</span
                 >
               </div>
               <div class="divider"></div>
               <div class="pinned-row">
-                <a href="#" class="project-name">logbook</a>
-                <span class="project-desc">plain-text daily logging cli</span>
-              </div>
-              <div class="divider"></div>
-              <div class="pinned-row">
-                <a href="#" class="project-name">this site</a>
+                <a href="#" class="project-name">this_site</a>
                 <span class="project-desc"
-                  >personal portfolio, react + tailwind</span
+                  >personal portfolio, built only using html, css and js</span
                 >
               </div>
               <div class="divider"></div>
@@ -120,21 +122,21 @@
             </div> -->
             <h1 class="blog-header">Blogs</h1>
             <span class="blog-subtitle"
-              >6 posts - i write when i feel strongly about something</span
+              >i write when i feel strongly about something</span
             >
 
             <div class="divider"></div>
 
-            <nav class="blog-tags">
+            <!-- <nav class="blog-tags">
               <a href="#" class="active-tag">all</a>
               <a href="#">systems</a>
               <a href="#">web</a>
               <a href="#">reading</a>
               <a href="#">tools</a>
               <a href="#">personal</a>
-            </nav>
+            </nav> -->
 
-            <div class="divider"></div>
+            <!-- <div class="divider"></div> -->
 
             <div class="blog-posts-list">
               <article class="blog-post-item">
@@ -222,7 +224,7 @@
                   <a
                     href="https://github.com/atrociousdinner/EDA_on_KUCBT_score"
                     class="post-title"
-                    target = "_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >EDA on KUCBT Score</a
                   >
@@ -237,10 +239,12 @@
                     NumPy, Matplotlib, and Tabula for PDF extraction, data
                     cleaning, analysis, and visualization.
                   </p>
-                  <!-- <div class="post-tags">
-                    <span>philosophy</span>
-                    <span>essays</span>
-                  </div> -->
+                  <div class="post-tags">
+                    <span>python</span>
+                    <span>numpy</span>
+                    <span>pandas</span>
+                    <span>matplotlib</span>
+                  </div>
                 </div>
               </article>
 
@@ -255,7 +259,7 @@
                   <a
                     href="https://github.com/atrociousdinner/expense-tracker-cli"
                     class="post-title"
-                    target = "_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >Expense Tracker CLI</a
                   >
@@ -263,15 +267,17 @@
                     A simple, command-line based Expense Tracker built with
                     Node.js. Track your spending, manage budgets, and view
                     monthly summaries, all from your terminal. Inspired from
-                    <a href="https://roadmap.sh/projects/expense-tracker"
-                    target = "_blank"
-                    rel="noopener noreferrer"
+                    <a
+                      href="https://roadmap.sh/projects/expense-tracker"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       >roadmap.sh</a
                     >
                   </p>
-                  <!-- <div class="post-tags">
-                    <span>tech</span>
-                  </div> -->
+                  <div class="post-tags">
+                    <span>javascript</span>
+                    <span>commander</span>
+                  </div>
                 </div>
               </article>
 
@@ -286,7 +292,7 @@
                   <a
                     href="https://github.com/atrociousdinner/expense-tracker-cli"
                     class="post-title"
-                    target = "_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >KUOSC Newsletter (Open Source)</a
                   >
@@ -297,9 +303,41 @@
                     API to fetch activity, renders a digest email template, and
                     sends mails.
                   </p>
-                  <!-- <div class="post-tags">
-                    <span>tech</span>
-                  </div> -->
+                  <div class="post-tags">
+                    <span>typescript</span>
+                    <span>GraphQL</span>
+                  </div>
+                </div>
+              </article>
+
+              <div class="divider"></div>
+
+              <article class="blog-post-item">
+                <!-- <div class="post-meta">
+                  <div class="post-date">10 May 2026</div>
+                  <div class="post-read-time">8 min</div>
+                </div> -->
+                <div class="post-content">
+                  <a
+                    href="https://github.com/helpMeCodeLife/altEco"
+                    class="post-title"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >altEco (Group Project)</a
+                  >
+                  <p class="post-description">
+                    altEco is a web-based recommendation system that offers a
+                    seamless, intelligent and eco-conscious experience and helps
+                    users discover eco-friendly products. It uses TF-IDF
+                    vectorization and cosine similarity to match product tags
+                    and provide smart suggestions.
+                  </p>
+                  <div class="post-tags">
+                    <span>javascript</span>
+                    <span>postgres</span>
+                    <span>express</span>
+                    <span>nodeJS</span>
+                  </div>
                 </div>
               </article>
 
@@ -314,7 +352,7 @@
                   <a
                     href="https://github.com/helpMeCodeLife/KUConnect"
                     class="post-title"
-                    target = "_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >KU Connect (Group Project)</a
                   >
@@ -327,9 +365,12 @@
                     study groups, share resources, and stay updated on
                     university events.
                   </p>
-                  <!-- <div class="post-tags">
-                    <span>tech</span>
-                  </div> -->
+                  <div class="post-tags">
+                    <span>javascript</span>
+                    <span>MongoDB</span>
+                    <span>express</span>
+                    <span>nodeJS</span>
+                  </div>
                 </div>
               </article>
 
@@ -346,44 +387,44 @@
                 <div class="divider"></div>
                 <div class="book-scroll-box">
                   <div class="book-card">
-                    <span>The Remains of the Day</span>
-                    <span>Kazuo Ishiguro</span>
-                    <span>1989</span>
+                    <span>A Thousand Splendid Suns</span>
+                    <span>Khaled Hossieni</span>
+                    <span>2007</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>Piranesi</span>
-                    <span>Susanna Clarke</span>
-                    <span>2020</span>
+                    <span>How to Be a Stoic</span>
+                    <span>Massimo Pigliucci</span>
+                    <span>2017</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>A Pattern Language</span>
-                    <span>Christopher Alexander</span>
-                    <span>1977</span>
+                    <span>Atomic Habits</span>
+                    <span>James Clear</span>
+                    <span>2018</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>Meditations</span>
-                    <span>Marcus Aurelius</span>
-                    <span>180 AD</span>
+                    <span>The Kite Runner</span>
+                    <span>Khaled Hossieni</span>
+                    <span>2007</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>The Dispossessed</span>
-                    <span>Ursula K. Le Guin</span>
-                    <span>1974</span>
+                    <span>The Fault in Our Stars</span>
+                    <span>John Green</span>
+                    <span>2012</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>Debt: The First 5,000 Years</span>
-                    <span>David Graeber</span>
-                    <span>2011</span>
+                    <span>एक चिहान</span>
+                    <span>हृदयचन्द्रसिंह प्रधान</span>
+                    <span>1971</span>
                     <div class="divider"></div>
                   </div>
                 </div>
@@ -395,30 +436,30 @@
                 <div class="divider"></div>
                 <div class="book-scroll-box">
                   <div class="book-card">
-                    <span>Gödel, Escher, Bach</span>
-                    <span>Douglas Hofstadter</span>
-                    <span>1979</span>
+                    <span>1984</span>
+                    <span>George Orwell</span>
+                    <span>1949</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>The Dream Machine</span>
-                    <span>M. Mitchell Waldrop</span>
-                    <span>2001</span>
+                    <span> The Catcher in the Rye </span>
+                    <span>J. D. Salinger</span>
+                    <span>1951</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>Ways of Seeing</span>
-                    <span>John Berger</span>
-                    <span>1972</span>
+                    <span>Meditations</span>
+                    <span>Marcus Aurelius</span>
+                    <span>180 AD</span>
                     <div class="divider"></div>
                   </div>
 
                   <div class="book-card">
-                    <span>Thinking in Systems</span>
-                    <span>Donella Meadows</span>
-                    <span>2008</span>
+                    <span>The Bloodstained Throne</span>
+                    <span>Babu Ram Acharya</span>
+                    <span>2013</span>
                     <div class="divider"></div>
                   </div>
                 </div>
@@ -435,37 +476,86 @@
             <div class="playlists-list">
               <div class="playlist-item">
                 <div class="playlist-details">
-                  <a href="#" class="playlist-name">hindi</a>
-                  <span class="playlist-desc">bollywood & hindi indie</span>
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLTFBjYHuyyKg&si=MAa6sqYaLDilXRYu"
+                    class="playlist-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >english</a
+                  >
+                  <span class="playlist-desc"
+                    >no particular genre: rock, pop and everything in
+                    between</span
+                  >
                 </div>
-                <span class="playlist-tracks">47 tracks</span>
+                <!-- <span class="playlist-tracks">47 tracks</span> -->
               </div>
               <div class="divider"></div>
 
               <div class="playlist-item">
                 <div class="playlist-details">
-                  <a href="#" class="playlist-name">nepali</a>
-                  <span class="playlist-desc">nepali rock, folk & indie</span>
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLDCMv_FpAzvE&si=HhkMMu64uBcz_tNo"
+                    class="playlist-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2010s bollywood vibes</a
+                  >
+                  <span class="playlist-desc">largely driven by nostalgia</span>
                 </div>
-                <span class="playlist-tracks">31 tracks</span>
+                <!-- <span class="playlist-tracks">31 tracks</span> -->
               </div>
               <div class="divider"></div>
 
               <div class="playlist-item">
                 <div class="playlist-details">
-                  <a href="#" class="playlist-name">english</a>
-                  <span class="playlist-desc">indie folk & slow burns</span>
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLe5KF3aBv7SM&si=dOFIcDfVc1_cw8Oz"
+                    class="playlist-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >contemporary_nepali</a
+                  >
+                  <span class="playlist-desc"
+                    >varkhar varkhar ko geet. some purano pani but not that
+                    purano</span
+                  >
                 </div>
-                <span class="playlist-tracks">58 tracks</span>
+                <!-- <span class="playlist-tracks">58 tracks</span> -->
               </div>
               <div class="divider"></div>
 
               <div class="playlist-item">
                 <div class="playlist-details">
-                  <a href="#" class="playlist-name">misc / classical</a>
-                  <span class="playlist-desc">ragas, pifano, and silence</span>
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLKbXXgvJA18OMbZHHoXolJbUcNghsL7FH&si=jFoweM9NNRNPXdYB"
+                    class="playlist-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >old_nepali_songs</a
+                  >
+                  <span class="playlist-desc"
+                    >inspired by my father's playlist</span
+                  >
                 </div>
-                <span class="playlist-tracks">22 tracks</span>
+                <!-- <span class="playlist-tracks">22 tracks</span> -->
+              </div>
+              <div class="divider"></div>
+
+              <div class="playlist-item">
+                <div class="playlist-details">
+                  <a
+                    href="https://music.youtube.com/playlist?list=PLKbXXgvJA18Opm2N2TWaQRxqyAmCKC-JP&si=IzQEQrviYv8wDaC5"
+                    class="playlist-name"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >atp_suggestions</a
+                  >
+                  <span class="playlist-desc"
+                    >a list of songs recommended to me by my close friend atp</span
+                  >
+                </div>
+                <!-- <span class="playlist-tracks">22 tracks</span> -->
               </div>
               <div class="divider"></div>
             </div>

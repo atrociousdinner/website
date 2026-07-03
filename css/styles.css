@@ -90,6 +90,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 1.2rem;
   background-color: #f5f2eb;
   border: 1px solid #b0a898;
@@ -650,3 +651,7 @@ body {
   white-space: nowrap;
 }
 
+/* #long-project-name{
+  display: flex;
+  flex-wrap: wrap;
+} */
