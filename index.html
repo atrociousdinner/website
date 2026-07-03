@@ -23,7 +23,7 @@
         <!-- Data Pages are used later on for JS -->
         <nav class="nav-bar">
           <a href="#" class="nav-link" data-page="blogs">blogs</a>
-          <a href="#" class="nav-link" data-page="writings">writings</a>
+          <a href="#" class="nav-link" data-page="projects">projects</a>
           <a href="#" class="nav-link" data-page="book_list">book_list</a>
           <a href="#" class="nav-link" data-page="cool_photos">cool_photos</a>
           <a href="#" class="nav-link" data-page="music_list">music_list</a>
@@ -198,68 +198,142 @@
             </div>
           </div>
 
-          <div class="page" id="page-writings">
-            <h1 class="blog-header">Writings</h1>
-            <span class="blog-subtitle"
-              >3 posts - longer essays and reflections</span
-            >
-
+          <div class="page" id="page-projects">
+            <h1 class="blog-header">Projects</h1>
             <div class="divider"></div>
 
-            <nav class="blog-tags">
+            <!-- Uncomment when you've finished the tag js -->
+            <!-- <nav class="blog-tags">
               <a href="#" class="active-tag">all</a>
               <a href="#">essays</a>
               <a href="#">tech</a>
               <a href="#">philosophy</a>
-            </nav>
+            </nav> -->
 
-            <div class="divider"></div>
+            <!-- <div class="divider"></div> -->
 
             <div class="blog-posts-list">
               <article class="blog-post-item">
-                <div class="post-meta">
+                <!-- <div class="post-meta">
                   <div class="post-date">28 Jun 2026</div>
                   <div class="post-read-time">5 min</div>
-                </div>
+                </div> -->
                 <div class="post-content">
                   <a
-                    href="./writings/on-focus-and-deep-work.html"
+                    href="https://github.com/atrociousdinner/EDA_on_KUCBT_score"
                     class="post-title"
-                    >On focus and deep work</a
+                    target = "_blank"
+                    rel="noopener noreferrer"
+                    >EDA on KUCBT Score</a
                   >
                   <p class="post-description">
-                    Distractions are cheap, attention is expensive. A deep dive
-                    into how I structured my daily environment to protect long
-                    blocks of unbroken programming time.
+                    An exploratory data analysis of KUCBT (Kathmandu University
+                    Computer-Based Test) scores across engineering departments
+                    using data extracted from Kathmandu University's official
+                    admissions website. The project analyzes admission trends to
+                    answer questions such as which engineering department is the
+                    most competitive, the cutoff scores for each department, and
+                    the gender ratio across departments. It uses Python, Pandas,
+                    NumPy, Matplotlib, and Tabula for PDF extraction, data
+                    cleaning, analysis, and visualization.
                   </p>
-                  <div class="post-tags">
+                  <!-- <div class="post-tags">
                     <span>philosophy</span>
                     <span>essays</span>
-                  </div>
+                  </div> -->
                 </div>
               </article>
 
               <div class="divider"></div>
 
               <article class="blog-post-item">
-                <div class="post-meta">
+                <!-- <div class="post-meta">
                   <div class="post-date">10 May 2026</div>
                   <div class="post-read-time">8 min</div>
-                </div>
+                </div> -->
                 <div class="post-content">
-                  <a href="#" class="post-title"
-                    >The aesthetics of text interfaces</a
+                  <a
+                    href="https://github.com/atrociousdinner/expense-tracker-cli"
+                    class="post-title"
+                    target = "_blank"
+                    rel="noopener noreferrer"
+                    >Expense Tracker CLI</a
                   >
                   <p class="post-description">
-                    Why terminal applications and plain-text protocols persist
-                    in an era of graphics cards. An exploration of efficiency,
-                    minimalism, and focus.
+                    A simple, command-line based Expense Tracker built with
+                    Node.js. Track your spending, manage budgets, and view
+                    monthly summaries, all from your terminal. Inspired from
+                    <a href="https://roadmap.sh/projects/expense-tracker"
+                    target = "_blank"
+                    rel="noopener noreferrer"
+                      >roadmap.sh</a
+                    >
                   </p>
-                  <div class="post-tags">
+                  <!-- <div class="post-tags">
                     <span>tech</span>
-                  </div>
+                  </div> -->
                 </div>
               </article>
+
+              <div class="divider"></div>
+
+              <article class="blog-post-item">
+                <!-- <div class="post-meta">
+                  <div class="post-date">10 May 2026</div>
+                  <div class="post-read-time">8 min</div>
+                </div> -->
+                <div class="post-content">
+                  <a
+                    href="https://github.com/atrociousdinner/expense-tracker-cli"
+                    class="post-title"
+                    target = "_blank"
+                    rel="noopener noreferrer"
+                    >KUOSC Newsletter (Open Source)</a
+                  >
+                  <p class="post-description">
+                    A small TypeScript service that generates a GitHub activity
+                    digest (recent repos + commits + issues + PRs) and sends it
+                    as an HTML email on a schedule. It uses the GitHub GraphQL
+                    API to fetch activity, renders a digest email template, and
+                    sends mails.
+                  </p>
+                  <!-- <div class="post-tags">
+                    <span>tech</span>
+                  </div> -->
+                </div>
+              </article>
+
+              <div class="divider"></div>
+
+              <article class="blog-post-item">
+                <!-- <div class="post-meta">
+                  <div class="post-date">10 May 2026</div>
+                  <div class="post-read-time">8 min</div>
+                </div> -->
+                <div class="post-content">
+                  <a
+                    href="https://github.com/helpMeCodeLife/KUConnect"
+                    class="post-title"
+                    target = "_blank"
+                    rel="noopener noreferrer"
+                    >KU Connect (Group Project)</a
+                  >
+                  <p class="post-description">
+                    KUConnect is a platform designed to connect university
+                    students, facilitating collaboration, networking, and
+                    academic discussions. Built using the MERN (MongoDB,
+                    Express, React, Node.js) stack, KUConnect provides a
+                    seamless experience for students to engage with peers, join
+                    study groups, share resources, and stay updated on
+                    university events.
+                  </p>
+                  <!-- <div class="post-tags">
+                    <span>tech</span>
+                  </div> -->
+                </div>
+              </article>
+
+              <div class="divider"></div>
             </div>
           </div>
 
@@ -401,32 +475,54 @@
             <h1 class="photos-list-title">Cool Photos</h1>
             <span class="blog-subtitle">iphone 7</span>
 
-
             <div class="photo-collage">
               <figure class="photo-cell" style="grid-area: a">
-                <img src="/assets/images/IMG_6570.JPG" alt="photo a" loading="lazy" />
+                <img
+                  src="/assets/images/IMG_6570.JPG"
+                  alt="photo a"
+                  loading="lazy"
+                />
               </figure>
               <figure class="photo-cell" style="grid-area: b">
-                <img src="/assets/images/att.2qupuoPkEhzcGwtMgmhLYNK-jjdP2mGz8TdAs5aDQMw.jpg" alt="photo b" loading="lazy" />
+                <img
+                  src="/assets/images/att.2qupuoPkEhzcGwtMgmhLYNK-jjdP2mGz8TdAs5aDQMw.jpg"
+                  alt="photo b"
+                  loading="lazy"
+                />
               </figure>
               <figure class="photo-cell" style="grid-area: c">
-                <img src="/assets/images/IMG_6075.JPEG" alt="photo c" loading="lazy" />
+                <img
+                  src="/assets/images/IMG_6075.JPEG"
+                  alt="photo c"
+                  loading="lazy"
+                />
               </figure>
               <figure class="photo-cell" style="grid-area: d">
-                <img src="/assets/images/IMG_7151.JPEG" alt="photo d" loading="lazy" />
+                <img
+                  src="/assets/images/IMG_7151.JPEG"
+                  alt="photo d"
+                  loading="lazy"
+                />
               </figure>
               <figure class="photo-cell" style="grid-area: e">
-                <img src="/assets/images/IMG_8090.JPEG" alt="photo e" loading="lazy" />
+                <img
+                  src="/assets/images/IMG_8090.JPEG"
+                  alt="photo e"
+                  loading="lazy"
+                />
               </figure>
               <!-- <figure class="photo-cell" style="grid-area: f">
                 <img src="./photos/photo-f.jpg" alt="photo f" loading="lazy" />
               </figure> -->
               <figure class="photo-cell" style="grid-area: g">
-                <img src="/assets/images/IMG_7955.JPEG" alt="photo g" loading="lazy" />
+                <img
+                  src="/assets/images/IMG_7955.JPEG"
+                  alt="photo g"
+                  loading="lazy"
+                />
               </figure>
             </div>
           </div>
-
         </div>
       </div>
     </div>
