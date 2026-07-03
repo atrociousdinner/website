@@ -454,6 +454,50 @@ body {
   color: #555;
 }
 
+.photos-list-title {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 0.2rem;
+}
+
+/* ─── cool_photos: grid-template-areas collage ───────
+
+   "a a b"   A spans two columns, B is tall on the right
+   "c d b"   C and D share the left, B continues
+   "e f g"   three across the bottom
+─────────────────────────────────────────────────────── */
+.photo-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px 180px 180px;
+  grid-template-areas:
+    "a a b"
+    "d c b"
+    "d e g";
+  gap: 4px;
+}
+
+/* Each cell: clip the image to the named area */
+.photo-cell {
+  margin: 0;
+  overflow: hidden;
+  background-color: #d0ccc2; /* visible placeholder while photos load */
+}
+
+.photo-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.photo-cell:hover img {
+  transform: scale(1.04);
+}
+
 .book-list-title {
   font-family: Georgia, serif;
   font-size: 2.5rem;
