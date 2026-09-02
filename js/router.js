@@ -1,3 +1,27 @@
+/* ─── Header videos: sync start, play once ──────────────────
+   Both videos have no autoplay. We wait for both to buffer
+   enough data (canplaythrough), then fire .play() on them
+   simultaneously in the same microtask so they stay in sync.
+───────────────────────────────────────────────────── */
+(function syncHeaderVideos() {
+  const vHandwriting = document.getElementById("header-video-handwriting");
+  const vFlower      = document.getElementById("header-video-flower");
+  if (!vHandwriting || !vFlower) return;
+
+  function readyPromise(video) {
+    // If already buffered enough, resolve immediately
+    if (video.readyState >= 4) return Promise.resolve();
+    return new Promise(resolve => {
+      video.addEventListener("canplaythrough", resolve, { once: true });
+    });
+  }
+
+  Promise.all([readyPromise(vHandwriting), readyPromise(vFlower)]).then(() => {
+    vHandwriting.play();
+    vFlower.play();
+  });
+})();
+
 const navLinks = document.querySelectorAll(".nav-link");
 const pages = document.querySelectorAll(".page");
 

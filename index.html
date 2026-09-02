@@ -15,44 +15,57 @@
       <div class="centre-div">
         <!-- 1. Header card -->
         <div class="card header-card">
-          <div class="video-crop-box">
-            <video class="handwriting-video" autoplay muted playsinline>
-              <source src="./assets/videos/handwriting.mp4" type="video/mp4" />
+          <div class="header-videos">
+            <div class="video-crop-box">
+              <video
+                id="header-video-handwriting"
+                class="handwriting-video"
+                muted
+                playsinline
+                preload="auto"
+              >
+                <source
+                  src="./assets/videos/handwriting.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <!-- Right: flower video -->
+            <video
+              id="header-video-flower"
+              class="flower-video"
+              muted
+              playsinline
+              preload="auto"
+            >
+              <source src="./assets/videos/flower.mp4" type="video/mp4" />
             </video>
           </div>
-          <span class="handle">
-            <i class="fa-brands fa-github"></i>
+          <div class="handle">
             <a
               href="https://github.com/atrociousdinner"
               class="social-link"
               target="_blank"
               rel="noopener noreferrer"
-              >@atrociousdinner</a
+              ><i class="fa-brands fa-github"></i> @atrociousdinner</a
             >
-
-            /
-            <i class="fa-brands fa-x-twitter"></i>
-
+            <span aria-hidden="true">/</span>
             <a
               href="https://x.com/mango_forager"
               class="social-link"
               target="_blank"
               rel="noopener noreferrer"
-              >@i_forage_mangoes
-            </a>
-
-            /
-
-            <i class="fa-brands fa-instagram"></i>
-
+              ><i class="fa-brands fa-x-twitter"></i> @i_forage_mangoes</a
+            >
+            <span aria-hidden="true">/</span>
             <a
               href="https://www.instagram.com/atrocious_dinner/"
               class="social-link"
               target="_blank"
               rel="noopener noreferrer"
-              >@atrocious_dinner
-            </a>
-          </span>
+              ><i class="fa-brands fa-instagram"></i> @atrocious_dinner</a
+            >
+          </div>
         </div>
 
         <!-- 2. Nav bar -->
@@ -206,7 +219,9 @@
                 <div class="post-date">25 August 2026</div>
               </div>
               <div class="post-content">
-                <a href="./blog/blog_palace_of_illusions.html" class="post-title"
+                <a
+                  href="./blog/blog_palace_of_illusions.html"
+                  class="post-title"
                   >The Missing Piece of a Complete Epic: Palace of Illusions
                 </a>
                 <p class="post-description">
@@ -505,6 +520,13 @@
                 <div class="divider"></div>
                 <div class="book-scroll-box">
                   <div class="book-card">
+                    <span>The Palace of Illusions</span>
+                    <span>Chitra Banerjee Divakaruni</span>
+                    <span>2008</span>
+                    <div class="divider"></div>
+                  </div>
+
+                  <div class="book-card">
                     <span>The Bloodstained Throne</span>
                     <span>Baburam Acharya</span>
                     <span>2013</span>
@@ -585,13 +607,6 @@
                     <span>Meditations</span>
                     <span>Marcus Aurelius</span>
                     <span>180 AD</span>
-                    <div class="divider"></div>
-                  </div>
-
-                  <div class="book-card">
-                    <span>The Bloodstained Throne</span>
-                    <span>Babu Ram Acharya</span>
-                    <span>2013</span>
                     <div class="divider"></div>
                   </div>
                 </div>
