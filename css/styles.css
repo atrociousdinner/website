@@ -473,6 +473,25 @@ body {
   color: #555;
 }
 
+.post-detail-figure {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.post-detail-figure .post-detail-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post-detail-figure-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
 .photos-list-title {
   font-family: Georgia, serif;
   font-size: 2.5rem;
